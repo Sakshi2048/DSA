@@ -20,7 +20,7 @@ string toBinary(int n)
         }
         n = n / 2;
     }
-    reverse(ans.begin(), ans.end()); // Reverse the string to get the correct binary representation
+   reverse(ans.begin(), ans.end()); // Reverse the string to get the correct binary representation
 
     return ans;
 }
