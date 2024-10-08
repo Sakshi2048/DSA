@@ -11,6 +11,30 @@ int power(int a,int b)
 
     return a*power(a,b-1);
 };
+
+ double myPow(double x, int n) {
+        long long m = n; 
+        if (m < 0) {
+            x = 1 / x; 
+            m = -m;   
+        }
+        
+        if (m == 0) return 1;
+        
+        if(m==1)
+        {
+            return x;
+        }
+        double h = myPow(x, m / 2); 
+        
+    
+        if (m % 2 == 0) {
+            return h * h; 
+        } else {
+            return h* h * x; 
+        }
+    }
+    
 int main(){
     
     
