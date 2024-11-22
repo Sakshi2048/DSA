@@ -18,7 +18,6 @@ You must implement a solution with O(1) time complexity for each function.
 
 */
 
-
 class MinStack {
 public:
     stack <pair<int, int>> stk;  // Stack to store (value, minimum_value_up_to_this_point)
