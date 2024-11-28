@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ file",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",       // Enable C++11 standard
+                "-g",               // Include debugging symbols
+                "${file}",          // The active file to compile
+                "-o",               // Specify the output file name
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for building C++ files."
+        }
+    ]
+}
